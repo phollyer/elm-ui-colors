@@ -74,16 +74,16 @@ main =
         , El.width El.fill
         , El.height El.fill
         ]
-    <|
-        El.column
-            [ El.centerX, El.centerY ]
-            [ El.el
-                [ Font.color white ]
-                ( El.text "white")
-            , El.el
-                [ Font.color hotpink ]
-                ( El.text "hotpink")
-            ]
+        <|
+            El.column
+                [ El.centerX, El.centerY ]
+                [ El.el
+                    [ Font.color white ]
+                    ( El.text "white")
+                , El.el
+                    [ Font.color hotpink ]
+                    ( El.text "hotpink")
+                ]
 ```
 
 # Credits
