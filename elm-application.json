@@ -1,0 +1,31 @@
+{
+    "name": "phollyer/elm-ui-colors",
+    "summary": "Colors for https://github.com/mdgriffith/elm-ui",
+    "version": "1.0.0",
+    "exposed-modules": [
+        "Color.Beige",
+        "Color.Black",
+        "Color.Blue",
+        "Color.Brown",
+        "Color.Cyan",
+        "Color.Gold",
+        "Color.Gray",
+        "Color.Green",
+        "Color.Grey",
+        "Color.Ivory",
+        "Color.Lavender",
+        "Color.Magenta",
+        "Color.Maroon",
+        "Color.Orange",
+        "Color.Peach",
+        "Color.Pink",
+        "Color.Purple",
+        "Color.Red",
+        "Color.Silver",
+        "Color.Tan",
+        "Color.Teal",
+        "Color.Turquoise",
+        "Color.White",
+        "Color.Yellow"
+    ]
+}
