@@ -49,9 +49,11 @@ Element.el
 
 # Usage
 
-Simply import the olors you require, and use them with your Elm-UI attributes.
+Simply import the colors you require, and use them with your Elm-UI attributes.
 
 ## Example
+
+To see the actual colors, clone the [repo](https://github.com/phollyer/elm-ui-colors) and run the [example](https://github.com/phollyer/elm-ui-colors/tree/master/example) in elm reactor.
 
 ```elm
 module Main exposing (main)
