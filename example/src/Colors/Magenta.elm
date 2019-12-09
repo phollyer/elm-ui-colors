@@ -1,13 +1,14 @@
-module Colors.Magenta exposing (colors, heading)
+module Colors.Magenta exposing (colors, name)
 
 import Color.Magenta exposing
   ( magenta, darkmagenta
   , fuchsia
   , purple
   )
-import Element exposing (el, centerX, text)
+import Element exposing (Color, el, centerX, text)
 
 
+colors : List (Color, String)
 colors =
   [ ( fuchsia, "fuchsia" )
   , ( magenta, "magenta" )
@@ -16,7 +17,6 @@ colors =
   ]
 
 
-heading =
-  el
-    [ centerX ]
-    ( text "Magenta Color Range" )
+name : String
+name =
+  "Magenta"

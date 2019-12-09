@@ -1,4 +1,4 @@
-module Colors.Gold exposing (colors, heading)
+module Colors.Gold exposing (colors, name)
 
 import Color.Gold exposing
   ( lightgoldenrodyellow, palegoldenrod, goldenrod
@@ -10,9 +10,10 @@ import Color.Gold exposing
   , saddlebrown
   , sienna
   )
-import Element exposing (el, centerX, text)
+import Element exposing (Color, el, centerX, text)
 
 
+colors : List (Color, String)
 colors =
   [ ( lightgoldenrodyellow, "lightgoldenrodyellow" )
   , ( palegoldenrod, "palegoldenrod" )
@@ -34,7 +35,6 @@ colors =
   ]
 
 
-heading =
-  el
-    [ centerX ]
-    ( text "Gold Color Range" )
+name : String
+name =
+  "Gold"

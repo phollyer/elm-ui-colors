@@ -1,4 +1,4 @@
-module Colors.Brown exposing (colors, heading)
+module Colors.Brown exposing (colors, name)
 
 import Color.Brown exposing
   ( cornsilk
@@ -18,9 +18,10 @@ import Color.Brown exposing
   , brown
   , maroon
   )
-import Element exposing (el, centerX, text)
+import Element exposing (Color, el, centerX, text)
 
 
+colors : List (Color, String)
 colors =
   [ ( cornsilk, "cornsilk" )
   , ( blanchedalmond, "blanchedalmond" )
@@ -41,7 +42,6 @@ colors =
   ]
 
 
-heading =
-  el
-    [ centerX ]
-    ( text "Brown Color Range" )
+name : String
+name =
+  "Brown"

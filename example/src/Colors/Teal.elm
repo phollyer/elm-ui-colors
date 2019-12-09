@@ -1,12 +1,13 @@
-module Colors.Teal exposing (colors, heading)
+module Colors.Teal exposing (colors, name)
 
 import Color.Teal exposing
   ( teal
   , darkcyan, cyan
   )
-import Element exposing (el, centerX, text)
+import Element exposing (Color, el, centerX, text)
 
 
+colors : List (Color, String)
 colors =
   [ ( teal, "teal" )
   , ( darkcyan, "darkcyan" )
@@ -14,7 +15,6 @@ colors =
   ]
 
 
-heading =
-  el
-    [ centerX ]
-    ( text "Teal Color Range" )
+name : String
+name =
+  "Teal"

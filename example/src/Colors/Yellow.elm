@@ -1,4 +1,4 @@
-module Colors.Yellow exposing (colors, heading)
+module Colors.Yellow exposing (colors, name)
 
 import Color.Yellow exposing
   ( lightyellow, yellow, lightYellow1, lightYellow2, lightYellow3, lightYellow4, darkYellow1, darkYellow2, darkYellow3, darkYellow4
@@ -11,9 +11,10 @@ import Color.Yellow exposing
   , olive
   , greenyellow, yellowgreen
   )
-import Element exposing (el, centerX, text)
+import Element exposing (Color, el, centerX, text)
 
 
+colors : List (Color, String)
 colors =
   [ ( lightyellow, "lightyellow" )
   , ( lightYellow1, "lightYellow1" )
@@ -39,7 +40,6 @@ colors =
   ]
 
 
-heading =
-  el
-    [ centerX ]
-    ( text "Yellow Color Range" )
+name : String
+name =
+  "Yellow"

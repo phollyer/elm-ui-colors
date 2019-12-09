@@ -1,4 +1,4 @@
-module Colors.Peach exposing (colors, heading)
+module Colors.Peach exposing (colors, name)
 
 import Color.Peach exposing
   ( peachpuff
@@ -6,9 +6,10 @@ import Color.Peach exposing
   , papayawhip
   , pink
   )
-import Element exposing (el, centerX, text)
+import Element exposing (Color, el, centerX, text)
 
 
+colors : List (Color, String)
 colors =
   [ ( peachpuff, "peachpuff" )
   , ( moccasin, "moccasin" )
@@ -17,7 +18,6 @@ colors =
   ]
 
 
-heading =
-  el
-    [ centerX ]
-    ( text "Peach Color Range" )
+name : String
+name =
+  "Peach"

@@ -1,4 +1,4 @@
-module Colors.Gray exposing (colors, heading)
+module Colors.Gray exposing (colors, name)
 
 import Color.Gray exposing
   ( gainsboro
@@ -7,9 +7,10 @@ import Color.Gray exposing
   , lightslategray, slategray, darkslategray
   , black
   )
-import Element exposing (el, centerX, text)
+import Element exposing (Color, el, centerX, text)
 
 
+colors : List (Color, String)
 colors =
   [ ( gainsboro, "gainsboro" )
   , ( lightgray, "lightgray" )
@@ -24,7 +25,6 @@ colors =
   ]
 
 
-heading =
-  el
-    [ centerX ]
-    ( text "Gray Color Range" )
+name : String
+name =
+  "Gray"

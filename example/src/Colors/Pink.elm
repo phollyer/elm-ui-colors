@@ -1,12 +1,13 @@
-module Colors.Pink exposing (colors, heading)
+module Colors.Pink exposing (colors, name)
 
 import Color.Pink exposing
   ( pink, lightpink, hotpink, deeppink
   , palevioletred, mediumvioletred
   )
-import Element exposing (el, centerX, text)
+import Element exposing (Color, el, centerX, text)
 
 
+colors : List (Color, String)
 colors =
   [ ( pink, "pink" )
   , ( lightpink, "lightpink" )
@@ -17,7 +18,6 @@ colors =
   ]
 
 
-heading =
-  el
-    [ centerX ]
-    ( text "Pink Color Range" )
+name : String
+name =
+  "Pink"

@@ -156,122 +156,122 @@ showColorRange color =
   case color of
     Just "Beige" ->
       viewColorRange
-        Beige.heading
+        Beige.name
         Beige.colors
 
     Just "Black" ->
       viewColorRange
-        Black.heading
+        Black.name
         Black.colors
 
     Just "Blue" ->
       viewColorRange
-        Blue.heading
+        Blue.name
         Blue.colors
 
     Just "Brown" ->
       viewColorRange
-        Brown.heading
+        Brown.name
         Brown.colors
 
     Just "Cyan" ->
       viewColorRange
-        Cyan.heading
+        Cyan.name
         Cyan.colors
 
     Just "Gold" ->
       viewColorRange
-        Gold.heading
+        Gold.name
         Gold.colors
 
     Just "Gray" ->
       viewColorRange
-        Gray.heading
+        Gray.name
         Gray.colors
 
     Just "Green" ->
       viewColorRange
-        Green.heading
+        Green.name
         Green.colors
 
     Just "Grey" ->
       viewColorRange
-        Grey.heading
+        Grey.name
         Grey.colors
 
     Just "Ivory" ->
       viewColorRange
-        Ivory.heading
+        Ivory.name
         Ivory.colors
 
     Just "Lavender" ->
       viewColorRange
-        Lavender.heading
+        Lavender.name
         Lavender.colors
 
     Just "Magenta" ->
       viewColorRange
-        Magenta.heading
+        Magenta.name
         Magenta.colors
 
     Just "Maroon" ->
       viewColorRange
-        Maroon.heading
+        Maroon.name
         Maroon.colors
 
     Just "Orange" ->
       viewColorRange
-        Orange.heading
+        Orange.name
         Orange.colors
 
     Just "Peach" ->
       viewColorRange
-        Peach.heading
+        Peach.name
         Peach.colors
 
     Just "Pink" ->
       viewColorRange
-        Pink.heading
+        Pink.name
         Pink.colors
 
     Just "Purple" ->
       viewColorRange
-        Purple.heading
+        Purple.name
         Purple.colors
 
     Just "Red" ->
       viewColorRange
-        Red.heading
+        Red.name
         Red.colors
 
     Just "Silver" ->
       viewColorRange
-        Silver.heading
+        Silver.name
         Silver.colors
 
     Just "Tan" ->
       viewColorRange
-        Tan.heading
+        Tan.name
         Tan.colors
 
     Just "Teal" ->
       viewColorRange
-        Teal.heading
+        Teal.name
         Teal.colors
 
     Just "Turquoise" ->
       viewColorRange
-        Turquoise.heading
+        Turquoise.name
         Turquoise.colors
 
     Just "White" ->
       viewColorRange
-        White.heading
+        White.name
         White.colors
 
     Just "Yellow" ->
       viewColorRange
-        Yellow.heading
+        Yellow.name
         Yellow.colors
 
     Just _ ->
@@ -285,16 +285,29 @@ showColorRange color =
         ( text "Select a Color Range" )
 
 
-viewColorRange : Element Msg -> List (Color, String) -> Element Msg
-viewColorRange heading colors =
+viewColorRange : String -> List (Color, String) -> Element Msg
+viewColorRange colorName colors =
+  let
+    title =
+      case colors |> List.length of
+        1 ->
+          colorName ++ " Color"
+
+        _ ->
+          colorName ++ " Color Range"
+
+  in
   column
     [ width fill
     , spacing 10
     ]
-    ( heading
-      ::
-      ( colors |> List.map showColor )
-    )
+    ( (
+        el
+          [ centerX ]
+          ( text title )
+        ::
+        ( colors |> List.map showColor )
+    ) )
 
 
 showColor : (Color, String) -> Element Msg

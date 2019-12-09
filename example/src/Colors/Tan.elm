@@ -1,19 +1,19 @@
-module Colors.Tan exposing (colors, heading)
+module Colors.Tan exposing (colors, name)
 
 import Color.Tan exposing
   ( tan
   , burlywood
   )
-import Element exposing (el, centerX, text)
+import Element exposing (Color, el, centerX, text)
 
 
+colors : List (Color, String)
 colors =
   [ ( tan, "tan" )
   , ( burlywood, "burlywood" )
   ]
 
 
-heading =
-  el
-    [ centerX ]
-    ( text "Tan Color Range" )
+name : String
+name =
+  "Tan"

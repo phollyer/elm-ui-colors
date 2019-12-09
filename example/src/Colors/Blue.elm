@@ -1,4 +1,4 @@
-module Colors.Blue exposing (colors, heading)
+module Colors.Blue exposing (colors, name)
 
 import Color.Blue exposing
   ( aliceblue
@@ -25,9 +25,10 @@ import Color.Blue exposing
   , blueviolet
   , indigo
   )
-import Element exposing (el, centerX, text)
+import Element exposing (Color, el, centerX, text)
 
 
+colors : List (Color, String)
 colors =
   [ ( aliceblue, "aliceblue" )
   , ( lavender, "lavender" )
@@ -55,7 +56,6 @@ colors =
   ]
 
 
-heading =
-  el
-    [ centerX ]
-    ( text "Blue Color Range" )
+name : String
+name =
+  "Blue"

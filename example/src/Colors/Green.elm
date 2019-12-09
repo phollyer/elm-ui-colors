@@ -1,4 +1,4 @@
-module Colors.Green exposing (colors, heading)
+module Colors.Green exposing (colors, name)
 
 import Color.Green exposing
   ( lawngreen
@@ -11,9 +11,10 @@ import Color.Green exposing
   , seagreen, darkseagreen, mediumseagreen, lightseagreen
   , olive, darkolivegreen, olivedrab
   )
-import Element exposing (el, centerX, text)
+import Element exposing (Color, el, centerX, text)
 
 
+colors : List (Color, String)
 colors =
   [ ( lawngreen, "lawngreen" )
   , ( chartreuse, "chartreuse" )
@@ -38,7 +39,6 @@ colors =
   ]
 
 
-heading =
-  el
-    [ centerX ]
-    ( text "Green Color Range" )
+name : String
+name =
+  "Green"

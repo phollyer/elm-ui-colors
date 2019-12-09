@@ -1,4 +1,4 @@
-module Colors.Orange exposing (colors, heading)
+module Colors.Orange exposing (colors, name)
 
 import Color.Orange exposing
   ( coral
@@ -6,9 +6,10 @@ import Color.Orange exposing
   , orangered, orange, darkorange
   , gold
   )
-import Element exposing (el, centerX, text)
+import Element exposing (Color, el, centerX, text)
 
 
+colors : List (Color, String)
 colors =
   [ ( coral, "coral" )
   , ( tomato, "tomato" )
@@ -19,7 +20,6 @@ colors =
   ]
 
 
-heading =
-  el
-    [ centerX ]
-    ( text "Orange Color Range" )
+name : String
+name =
+  "Orange"

@@ -1,4 +1,4 @@
-module Colors.White exposing (colors, heading)
+module Colors.White exposing (colors, name)
 
 import Color.White exposing
   ( white
@@ -20,9 +20,10 @@ import Color.White exposing
   , mistyrose
   , navajowhite
   )
-import Element exposing (el, centerX, text)
+import Element exposing (Color, el, centerX, text)
 
 
+colors : List (Color, String)
 colors =
   [ ( white, "white" )
   , ( snow, "snow" )
@@ -45,7 +46,6 @@ colors =
   ]
 
 
-heading =
-  el
-    [ centerX ]
-    ( text "White Color Range" )
+name : String
+name =
+  "White"

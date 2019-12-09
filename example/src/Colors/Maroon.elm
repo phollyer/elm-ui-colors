@@ -1,4 +1,4 @@
-module Colors.Maroon exposing (colors, heading)
+module Colors.Maroon exposing (colors, name)
 
 import Color.Maroon exposing
   ( maroon
@@ -7,9 +7,10 @@ import Color.Maroon exposing
   , firebrick
   , crimson
   )
-import Element exposing (el, centerX, text)
+import Element exposing (Color, el, centerX, text)
 
 
+colors : List (Color, String)
 colors =
   [ ( maroon, "maroon" )
   , ( darkred, "darkred" )
@@ -19,7 +20,6 @@ colors =
   ]
 
 
-heading =
-  el
-    [ centerX ]
-    ( text "Maroon Color Range" )
+name : String
+name =
+  "Maroon"

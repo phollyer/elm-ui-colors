@@ -1,4 +1,4 @@
-module Colors.Cyan exposing (colors, heading)
+module Colors.Cyan exposing (colors, name)
 
 import Color.Cyan exposing
   ( aqua, cyan, lightcyan, darkcyan
@@ -8,9 +8,10 @@ import Color.Cyan exposing
   , cadetblue
   , teal
   )
-import Element exposing (el, centerX, text)
+import Element exposing (Color, el, centerX, text)
 
 
+colors : List (Color, String)
 colors =
   [ ( lightcyan, "lightcyan" )
   , ( cyan, "cyan" )
@@ -28,7 +29,6 @@ colors =
   ]
 
 
-heading =
-  el
-    [ centerX ]
-    ( text "Cyan Color Range" )
+name : String
+name =
+  "Cyan"

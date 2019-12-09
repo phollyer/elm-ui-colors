@@ -1,4 +1,4 @@
-module Colors.Black exposing (colors, heading)
+module Colors.Black exposing (colors, name)
 
 import Color.Black exposing
   ( black
@@ -7,10 +7,11 @@ import Color.Black exposing
   , darkgray, darkgrey
   , silver
   )
-import Element as El exposing (el, centerX, text)
+import Element as El exposing (Color, el, centerX, text)
 import Element.Background as Background
 
 
+colors : List (Color, String)
 colors =
   [ ( black, "black" )
   , ( dimgrey, "dimgrey / dimgray" )
@@ -20,7 +21,6 @@ colors =
   ]
 
 
-heading =
-  el
-    [ centerX ]
-    ( text "Black Color Range" )
+name : String
+name =
+  "Black"

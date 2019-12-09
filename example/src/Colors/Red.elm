@@ -1,4 +1,4 @@
-module Colors.Red exposing (colors, heading)
+module Colors.Red exposing (colors, name)
 
 import Color.Red exposing
   ( lightsalmon, salmon, darksalmon
@@ -10,9 +10,10 @@ import Color.Red exposing
   , maroon
   , tomato
   )
-import Element exposing (el, centerX, text)
+import Element exposing (Color, el, centerX, text)
 
 
+colors : List (Color, String)
 colors =
   [ ( lightsalmon, "lightsalmon" )
   , ( salmon, "salmon" )
@@ -30,7 +31,6 @@ colors =
   ]
 
 
-heading =
-  el
-    [ centerX ]
-    ( text "Red Color Range" )
+name : String
+name =
+  "Red"

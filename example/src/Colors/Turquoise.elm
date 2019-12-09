@@ -1,4 +1,4 @@
-module Colors.Turquoise exposing (colors, heading)
+module Colors.Turquoise exposing (colors, name)
 
 import Color.Turquoise exposing
   ( paleturquoise
@@ -6,9 +6,10 @@ import Color.Turquoise exposing
   , mediumturquoise
   , darkturquoise
   )
-import Element exposing (el, centerX, text)
+import Element exposing (Color, el, centerX, text)
 
 
+colors : List (Color, String)
 colors =
   [ ( paleturquoise, "paleturquoise" )
   , ( turquoise, "turquoise" )
@@ -17,7 +18,6 @@ colors =
   ]
 
 
-heading =
-  el
-    [ centerX ]
-    ( text "Turquoise Color Range" )
+name : String
+name =
+  "Turquoise"

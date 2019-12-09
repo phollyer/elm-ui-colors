@@ -1,4 +1,4 @@
-module Colors.Purple exposing (colors, heading)
+module Colors.Purple exposing (colors, name)
 
 import Color.Purple exposing
   ( lavender
@@ -11,9 +11,10 @@ import Color.Purple exposing
   , mediumpurple, purple
   , indigo
   )
-import Element exposing (el, centerX, text)
+import Element exposing (Color, el, centerX, text)
 
 
+colors : List (Color, String)
 colors =
   [ ( lavender, "lavender" )
   , ( thistle, "thistle" )
@@ -32,7 +33,6 @@ colors =
   ]
 
 
-heading =
-  el
-    [ centerX ]
-    ( text "Purple Color Range" )
+name : String
+name =
+  "Purple"
