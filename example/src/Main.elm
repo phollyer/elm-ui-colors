@@ -109,30 +109,30 @@ navbar =
     , Background.color grey
     ]
     (
-      [ colorSelector "Beige"
-      , colorSelector "Black"
-      , colorSelector "Blue"
-      , colorSelector "Brown"
-      , colorSelector "Cyan"
-      , colorSelector "Gold"
-      , colorSelector "Gray"
-      , colorSelector "Green"
-      , colorSelector "Grey"
-      , colorSelector "Ivory"
-      , colorSelector "Lavender"
-      , colorSelector "Magenta"
-      , colorSelector "Maroon"
-      , colorSelector "Orange"
-      , colorSelector "Peach"
-      , colorSelector "Pink"
-      , colorSelector "Purple"
-      , colorSelector "Red"
-      , colorSelector "Silver"
-      , colorSelector "Tan"
-      , colorSelector "Teal"
-      , colorSelector "Turquoise"
-      , colorSelector "White"
-      , colorSelector "Yellow"
+      [ colorSelector Beige.name
+      , colorSelector Black.name
+      , colorSelector Blue.name
+      , colorSelector Brown.name
+      , colorSelector Cyan.name
+      , colorSelector Gold.name
+      , colorSelector Gray.name
+      , colorSelector Green.name
+      , colorSelector Grey.name
+      , colorSelector Ivory.name
+      , colorSelector Lavender.name
+      , colorSelector Magenta.name
+      , colorSelector Maroon.name
+      , colorSelector Orange.name
+      , colorSelector Peach.name
+      , colorSelector Pink.name
+      , colorSelector Purple.name
+      , colorSelector Red.name
+      , colorSelector Silver.name
+      , colorSelector Tan.name
+      , colorSelector Teal.name
+      , colorSelector Turquoise.name
+      , colorSelector White.name
+      , colorSelector Yellow.name
       ]
       |> List.intersperse
         ( el
