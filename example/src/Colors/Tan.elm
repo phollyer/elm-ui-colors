@@ -1,19 +1,16 @@
 module Colors.Tan exposing (colors, name)
 
-import Color.Tan exposing
-  ( tan
-  , burlywood
-  )
-import Element exposing (Color, el, centerX, text)
+import Color.Tan as Tan
+import Element exposing (Color, centerX, el, text)
 
 
-colors : List (Color, String)
+colors : List ( Color, String )
 colors =
-  [ ( tan, "tan" )
-  , ( burlywood, "burlywood" )
-  ]
+    [ ( Tan.tan, "tan" )
+    , ( Tan.burlywood, "burlywood" )
+    ]
 
 
 name : String
 name =
-  "Tan"
+    "Tan"

@@ -1,11 +1,12 @@
-module Color.Beige exposing
-  ( beige )
+module Color.Beige exposing (beige)
 
 {-| Beig Color
+
 
 # HTML/CSS color name
 
 @docs beige
+
 -}
 
 import Element exposing (Color, rgb255)
@@ -16,4 +17,4 @@ import Element exposing (Color, rgb255)
 -}
 beige : Color
 beige =
-  rgb255 245 245 220
+    rgb255 245 245 220

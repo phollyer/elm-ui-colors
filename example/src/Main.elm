@@ -1,8 +1,6 @@
 module Main exposing (main)
 
-
-{- Run this example in elm reactor in order to view the colors.
--}
+{- Run this example in elm reactor in order to view the colors. -}
 
 import Browser
 import Color.Black exposing (black)
@@ -32,7 +30,7 @@ import Colors.Teal as Teal
 import Colors.Turquoise as Turquoise
 import Colors.White as White
 import Colors.Yellow as Yellow
-import Element as El exposing (Element, Color, el, column, wrappedRow, centerX, height, width, fill, padding, paddingEach, paddingXY, pointer, px, spacing, text)
+import Element as El exposing (Color, Element, centerX, column, el, fill, height, padding, paddingEach, paddingXY, pointer, px, spacing, text, width, wrappedRow)
 import Element.Background as Background
 import Element.Border as Border
 import Element.Events exposing (onClick)
@@ -46,28 +44,30 @@ import Html exposing (Html)
 
 init : Model
 init =
-  { colorRange = Nothing }
+    { colorRange = Nothing }
 
 
 type alias Model =
-  { colorRange : Maybe String }
+    { colorRange : Maybe String }
+
 
 
 -- UPDATE
 
 
-type Msg =
-  SelectColor String
+type Msg
+    = SelectColor String
 
 
 update : Msg -> Model -> Model
 update msg model =
-  { model | colorRange = Just (msg |> selectedColor) }
+    { model | colorRange = Just (msg |> selectedColor) }
 
 
 selectedColor : Msg -> String
 selectedColor (SelectColor color) =
-  color
+    color
+
 
 
 -- VIEW
@@ -75,260 +75,255 @@ selectedColor (SelectColor color) =
 
 view : Model -> Html Msg
 view model =
-  El.layout
-    [ width fill
-    , Font.color black
-    , paddingEach
-        { left = 0
-        , top = 0
-        , right = 0
-        , bottom = 20
-        }
-    ]
-    <|
-      column
+    El.layout
         [ width fill
-        , spacing 20
+        , Font.color black
+        , paddingEach
+            { left = 0
+            , top = 0
+            , right = 0
+            , bottom = 20
+            }
         ]
-        [ navbar
-
-        , column
-          [ paddingXY 20 0
-          , width fill
-          ]
-          [ showColorRange model.colorRange ]
-        ]
+    <|
+        column
+            [ width fill
+            , spacing 20
+            ]
+            [ navbar
+            , column
+                [ paddingXY 20 0
+                , width fill
+                ]
+                [ showColorRange model.colorRange ]
+            ]
 
 
 navbar : Element Msg
 navbar =
-  wrappedRow
-    [ width fill
-    , padding 10
-    , spacing 5
-    , Background.color grey
-    ]
-    (
-      [ colorSelector Beige.name
-      , colorSelector Black.name
-      , colorSelector Blue.name
-      , colorSelector Brown.name
-      , colorSelector Cyan.name
-      , colorSelector Gold.name
-      , colorSelector Gray.name
-      , colorSelector Green.name
-      , colorSelector Grey.name
-      , colorSelector Ivory.name
-      , colorSelector Lavender.name
-      , colorSelector Magenta.name
-      , colorSelector Maroon.name
-      , colorSelector Orange.name
-      , colorSelector Peach.name
-      , colorSelector Pink.name
-      , colorSelector Purple.name
-      , colorSelector Red.name
-      , colorSelector Silver.name
-      , colorSelector Tan.name
-      , colorSelector Teal.name
-      , colorSelector Turquoise.name
-      , colorSelector White.name
-      , colorSelector Yellow.name
-      ]
-      |> List.intersperse
-        ( el
-            [ Font.color white ]
-            (text "|")
+    wrappedRow
+        [ width fill
+        , padding 10
+        , spacing 5
+        , Background.color grey
+        ]
+        ([ colorSelector Beige.name
+         , colorSelector Black.name
+         , colorSelector Blue.name
+         , colorSelector Brown.name
+         , colorSelector Cyan.name
+         , colorSelector Gold.name
+         , colorSelector Gray.name
+         , colorSelector Green.name
+         , colorSelector Grey.name
+         , colorSelector Ivory.name
+         , colorSelector Lavender.name
+         , colorSelector Magenta.name
+         , colorSelector Maroon.name
+         , colorSelector Orange.name
+         , colorSelector Peach.name
+         , colorSelector Pink.name
+         , colorSelector Purple.name
+         , colorSelector Red.name
+         , colorSelector Silver.name
+         , colorSelector Tan.name
+         , colorSelector Teal.name
+         , colorSelector Turquoise.name
+         , colorSelector White.name
+         , colorSelector Yellow.name
+         ]
+            |> List.intersperse
+                (el
+                    [ Font.color white ]
+                    (text "|")
+                )
         )
-    )
 
 
 colorSelector : String -> Element Msg
 colorSelector color =
-  el
-    [ onClick (SelectColor color)
-    , pointer
-    ]
-    ( text color)
+    el
+        [ onClick (SelectColor color)
+        , pointer
+        ]
+        (text color)
 
 
 showColorRange : Maybe String -> Element Msg
 showColorRange color =
-  case color of
-    Just "Beige" ->
-      viewColorRange
-        Beige.name
-        Beige.colors
+    case color of
+        Just "Beige" ->
+            viewColorRange
+                Beige.name
+                Beige.colors
 
-    Just "Black" ->
-      viewColorRange
-        Black.name
-        Black.colors
+        Just "Black" ->
+            viewColorRange
+                Black.name
+                Black.colors
 
-    Just "Blue" ->
-      viewColorRange
-        Blue.name
-        Blue.colors
+        Just "Blue" ->
+            viewColorRange
+                Blue.name
+                Blue.colors
 
-    Just "Brown" ->
-      viewColorRange
-        Brown.name
-        Brown.colors
+        Just "Brown" ->
+            viewColorRange
+                Brown.name
+                Brown.colors
 
-    Just "Cyan" ->
-      viewColorRange
-        Cyan.name
-        Cyan.colors
+        Just "Cyan" ->
+            viewColorRange
+                Cyan.name
+                Cyan.colors
 
-    Just "Gold" ->
-      viewColorRange
-        Gold.name
-        Gold.colors
+        Just "Gold" ->
+            viewColorRange
+                Gold.name
+                Gold.colors
 
-    Just "Gray" ->
-      viewColorRange
-        Gray.name
-        Gray.colors
+        Just "Gray" ->
+            viewColorRange
+                Gray.name
+                Gray.colors
 
-    Just "Green" ->
-      viewColorRange
-        Green.name
-        Green.colors
+        Just "Green" ->
+            viewColorRange
+                Green.name
+                Green.colors
 
-    Just "Grey" ->
-      viewColorRange
-        Grey.name
-        Grey.colors
+        Just "Grey" ->
+            viewColorRange
+                Grey.name
+                Grey.colors
 
-    Just "Ivory" ->
-      viewColorRange
-        Ivory.name
-        Ivory.colors
+        Just "Ivory" ->
+            viewColorRange
+                Ivory.name
+                Ivory.colors
 
-    Just "Lavender" ->
-      viewColorRange
-        Lavender.name
-        Lavender.colors
+        Just "Lavender" ->
+            viewColorRange
+                Lavender.name
+                Lavender.colors
 
-    Just "Magenta" ->
-      viewColorRange
-        Magenta.name
-        Magenta.colors
+        Just "Magenta" ->
+            viewColorRange
+                Magenta.name
+                Magenta.colors
 
-    Just "Maroon" ->
-      viewColorRange
-        Maroon.name
-        Maroon.colors
+        Just "Maroon" ->
+            viewColorRange
+                Maroon.name
+                Maroon.colors
 
-    Just "Orange" ->
-      viewColorRange
-        Orange.name
-        Orange.colors
+        Just "Orange" ->
+            viewColorRange
+                Orange.name
+                Orange.colors
 
-    Just "Peach" ->
-      viewColorRange
-        Peach.name
-        Peach.colors
+        Just "Peach" ->
+            viewColorRange
+                Peach.name
+                Peach.colors
 
-    Just "Pink" ->
-      viewColorRange
-        Pink.name
-        Pink.colors
+        Just "Pink" ->
+            viewColorRange
+                Pink.name
+                Pink.colors
 
-    Just "Purple" ->
-      viewColorRange
-        Purple.name
-        Purple.colors
+        Just "Purple" ->
+            viewColorRange
+                Purple.name
+                Purple.colors
 
-    Just "Red" ->
-      viewColorRange
-        Red.name
-        Red.colors
+        Just "Red" ->
+            viewColorRange
+                Red.name
+                Red.colors
 
-    Just "Silver" ->
-      viewColorRange
-        Silver.name
-        Silver.colors
+        Just "Silver" ->
+            viewColorRange
+                Silver.name
+                Silver.colors
 
-    Just "Tan" ->
-      viewColorRange
-        Tan.name
-        Tan.colors
+        Just "Tan" ->
+            viewColorRange
+                Tan.name
+                Tan.colors
 
-    Just "Teal" ->
-      viewColorRange
-        Teal.name
-        Teal.colors
+        Just "Teal" ->
+            viewColorRange
+                Teal.name
+                Teal.colors
 
-    Just "Turquoise" ->
-      viewColorRange
-        Turquoise.name
-        Turquoise.colors
+        Just "Turquoise" ->
+            viewColorRange
+                Turquoise.name
+                Turquoise.colors
 
-    Just "White" ->
-      viewColorRange
-        White.name
-        White.colors
+        Just "White" ->
+            viewColorRange
+                White.name
+                White.colors
 
-    Just "Yellow" ->
-      viewColorRange
-        Yellow.name
-        Yellow.colors
+        Just "Yellow" ->
+            viewColorRange
+                Yellow.name
+                Yellow.colors
 
-    Just _ ->
-      el
-        [ centerX ]
-        ( text "I don't know that color, please select a color range" )
+        Just _ ->
+            el
+                [ centerX ]
+                (text "I don't know that color, please select a color range")
 
-    Nothing ->
-      el
-        [ centerX ]
-        ( text "Select a Color Range" )
+        Nothing ->
+            el
+                [ centerX ]
+                (text "Select a Color Range")
 
 
-viewColorRange : String -> List (Color, String) -> Element Msg
+viewColorRange : String -> List ( Color, String ) -> Element Msg
 viewColorRange colorName colors =
-  let
-    title =
-      case colors |> List.length of
-        1 ->
-          colorName ++ " Color"
+    let
+        title =
+            case colors |> List.length of
+                1 ->
+                    colorName ++ " Color"
 
-        _ ->
-          colorName ++ " Color Range"
-
-  in
-  column
-    [ width fill
-    , spacing 10
-    ]
-    ( (
-        el
-          [ centerX ]
-          ( text title )
-        ::
-        ( colors |> List.map showColor )
-    ) )
-
-
-showColor : (Color, String) -> Element Msg
-showColor (color, name) =
-  column
-    [ width fill 
-    , spacing 5
-    ]
-    [ el []
-        ( text name )
-
-    , el
+                _ ->
+                    colorName ++ " Color Range"
+    in
+    column
         [ width fill
-        , height (px 50)
-        , Background.color color
-        , Border.color black
-        , Border.solid
-        , Border.width 1
+        , spacing 10
         ]
-        ( El.none )
-    ]
+        (el
+            [ centerX ]
+            (text title)
+            :: (colors |> List.map showColor)
+        )
+
+
+showColor : ( Color, String ) -> Element Msg
+showColor ( color, name ) =
+    column
+        [ width fill
+        , spacing 5
+        ]
+        [ el []
+            (text name)
+        , el
+            [ width fill
+            , height (px 50)
+            , Background.color color
+            , Border.color black
+            , Border.solid
+            , Border.width 1
+            ]
+            El.none
+        ]
+
 
 
 -- Program
@@ -336,10 +331,8 @@ showColor (color, name) =
 
 main : Program () Model Msg
 main =
-  Browser.sandbox
-    { init = init
-    , update = update
-    , view = view
-    }
-
-
+    Browser.sandbox
+        { init = init
+        , update = update
+        , view = view
+        }
