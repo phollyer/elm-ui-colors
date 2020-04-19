@@ -13,6 +13,7 @@ Ran `elm-format` over all `src` and example `src` files
 ### Fixed
 
 Fix the incorrect 'fix' in previous build - corrected "0.19.0 <= v < 0.20.0" to "0.19.0"
+
 Fix name clashes with `Basics.tan` in example.
 
 ## [1.0.3] - 2020-04-16
