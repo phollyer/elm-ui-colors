@@ -3,7 +3,7 @@
     "name": "phollyer/elm-ui-colors",
     "summary": "Colors for https://github.com/mdgriffith/elm-ui",
     "license": "BSD-3-Clause",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "exposed-modules": [
         "Color.Beige",
         "Color.Black",
