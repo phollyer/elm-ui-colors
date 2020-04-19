@@ -1,30 +1,36 @@
 module Colors.Grey exposing (colors, name)
 
-import Color.Grey exposing
-  ( gainsboro
-  , lightgrey, darkgrey, grey, dimgrey
-  , silver
-  , lightslategrey, slategrey, darkslategrey
-  , black
-  )
-import Element exposing (Color, el, centerX, text)
+import Color.Grey
+    exposing
+        ( black
+        , darkgrey
+        , darkslategrey
+        , dimgrey
+        , gainsboro
+        , grey
+        , lightgrey
+        , lightslategrey
+        , silver
+        , slategrey
+        )
+import Element exposing (Color, centerX, el, text)
 
 
-colors : List (Color, String)
+colors : List ( Color, String )
 colors =
-  [ ( gainsboro, "gainsboro" )
-  , ( lightgrey, "lightgrey" )
-  , ( darkgrey, "darkgrey" )
-  , ( grey, "grey" )
-  , ( dimgrey, "dimgrey" )
-  , ( silver, "silver" )
-  , ( lightslategrey, "lightslategrey" )
-  , ( slategrey, "slategrey" )
-  , ( darkslategrey, "darkslategrey" )
-  , ( black, "black" )
-  ]
+    [ ( gainsboro, "gainsboro" )
+    , ( lightgrey, "lightgrey" )
+    , ( darkgrey, "darkgrey" )
+    , ( grey, "grey" )
+    , ( dimgrey, "dimgrey" )
+    , ( silver, "silver" )
+    , ( lightslategrey, "lightslategrey" )
+    , ( slategrey, "slategrey" )
+    , ( darkslategrey, "darkslategrey" )
+    , ( black, "black" )
+    ]
 
 
 name : String
 name =
-  "Grey"
+    "Grey"

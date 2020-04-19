@@ -1,30 +1,28 @@
-module Color.Tan exposing
-  ( tan
-  , burlywood
-  )
+module Color.Tan exposing (tan, burlywood)
 
 {-| The Tan range of Colors.
+
 
 # HTML/CSS color names
 
 @docs tan, burlywood
- -}
 
+-}
 
 import Element exposing (Color, rgb255)
 
 
-{-|rgb(210, 180, 140)
+{-| rgb(210, 180, 140)
 #D2B48C
 -}
 tan : Color
 tan =
-  rgb255 210 180 140
+    rgb255 210 180 140
 
 
-{-|rgb(222, 184, 135)
+{-| rgb(222, 184, 135)
 #DEB887
 -}
 burlywood : Color
 burlywood =
-  rgb255 222 184 135
+    rgb255 222 184 135

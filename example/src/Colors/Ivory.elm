@@ -1,17 +1,18 @@
 module Colors.Ivory exposing (colors, name)
 
-import Color.Ivory exposing
-  ( ivory
-  )
-import Element exposing (Color, el, centerX, text)
+import Color.Ivory
+    exposing
+        ( ivory
+        )
+import Element exposing (Color, centerX, el, text)
 
 
-colors : List (Color, String)
+colors : List ( Color, String )
 colors =
-  [ ( ivory, "ivory" )
-  ]
+    [ ( ivory, "ivory" )
+    ]
 
 
 name : String
 name =
-  "Ivory"
+    "Ivory"
