@@ -16,7 +16,6 @@ import Color.Brown as Brown
         , saddlebrown
         , sandybrown
         , sienna
-        , tan
         , wheat
         )
 import Element exposing (Color, centerX, el, text)

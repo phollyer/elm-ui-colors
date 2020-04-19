@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.0.4] - 2020-04-20
+
+### Fixed
+
+Fix the incorrect 'fix' in previous build - corrected "0.19.0 <= v < 0.20.0" to "0.19.0"
+Fix name clashes with `Basics.tan` in example.
+
 ## [1.0.3] - 2020-04-16
 
 ### Fixed
