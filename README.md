@@ -63,9 +63,9 @@ module Main exposing (main)
 import Element as El
 import Element.Background as Background
 import Element.Font as Font
-import Color.Black exposing (black)
-import Color.White exposing (white)
-import Color.Pink exposing (hotpink)
+import Color.Rgb.Black exposing (black)
+import Color.Rgb.White exposing (white)
+import Color.Rgb.Pink exposing (hotpink)
 
 
 main =
