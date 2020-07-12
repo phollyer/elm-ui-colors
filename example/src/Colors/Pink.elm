@@ -1,6 +1,6 @@
 module Colors.Pink exposing (colors, name)
 
-import Color.Pink
+import Color.Rgb.Pink
     exposing
         ( deeppink
         , hotpink

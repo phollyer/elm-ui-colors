@@ -1,6 +1,6 @@
 module Colors.Blue exposing (colors, name)
 
-import Color.Blue
+import Color.Rgb.Blue
     exposing
         ( aliceblue
         , blue

@@ -1,6 +1,6 @@
 module Colors.Purple exposing (colors, name)
 
-import Color.Purple
+import Color.Rgb.Purple
     exposing
         ( blueviolet
         , darkmagenta

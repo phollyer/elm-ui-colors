@@ -1,6 +1,6 @@
 module Colors.Magenta exposing (colors, name)
 
-import Color.Magenta
+import Color.Rgb.Magenta
     exposing
         ( darkmagenta
         , fuchsia

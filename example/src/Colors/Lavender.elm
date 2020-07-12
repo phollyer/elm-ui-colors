@@ -1,6 +1,6 @@
 module Colors.Lavender exposing (colors, name)
 
-import Color.Lavender
+import Color.Rgb.Lavender
     exposing
         ( lavender
         , lavenderblush

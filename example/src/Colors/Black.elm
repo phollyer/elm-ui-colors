@@ -1,6 +1,6 @@
 module Colors.Black exposing (colors, name)
 
-import Color.Black
+import Color.Rgb.Black
     exposing
         ( black
         , darkgray

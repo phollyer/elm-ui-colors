@@ -1,6 +1,6 @@
 module Colors.Green exposing (colors, name)
 
-import Color.Green
+import Color.Rgb.Green
     exposing
         ( chartreuse
         , darkgreen

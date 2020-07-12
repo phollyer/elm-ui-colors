@@ -3,9 +3,9 @@ module Main exposing (main)
 {- Run this example in elm reactor in order to view the colors. -}
 
 import Browser
-import Color.Black exposing (black)
-import Color.Grey exposing (grey)
-import Color.White exposing (white)
+import Color.Rgb.Black exposing (black)
+import Color.Rgb.Grey exposing (grey)
+import Color.Rgb.White exposing (white)
 import Colors.Beige as Beige
 import Colors.Black as Black
 import Colors.Blue as Blue

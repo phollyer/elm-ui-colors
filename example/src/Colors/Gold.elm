@@ -1,6 +1,6 @@
 module Colors.Gold exposing (colors, name)
 
-import Color.Gold
+import Color.Rgb.Gold
     exposing
         ( chocolate
         , darkorange

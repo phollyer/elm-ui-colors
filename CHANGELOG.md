@@ -4,6 +4,16 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.0.0] - 2020-07-12
+
+### Moved
+
+Opaque `rgb255` colors from `Color` to `Color.Rgb`
+
+### Added
+
+`rgba255` colors to `Color.Rgba`
+
 ## [1.0.5] - 2020-04-20
 
 Ran `elm-format` over all `src` and example `src` files
@@ -40,6 +50,7 @@ Example
 
 Initial Commit.
 
+[2.0.0]: https://github.com/phollyer/elm-ui-colors/compare/1.0.5...2.0.0
 [1.0.5]: https://github.com/phollyer/elm-ui-colors/compare/1.0.4...1.0.5
 [1.0.4]: https://github.com/phollyer/elm-ui-colors/compare/1.0.3...1.0.4
 [1.0.3]: https://github.com/phollyer/elm-ui-colors/compare/1.0.2...1.0.3
