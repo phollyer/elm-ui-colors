@@ -29,6 +29,12 @@ module Colors.Alpha exposing
 
 # Alpha Colors
 
+    import Colors.Alpha exposing (black)
+
+    black 1 -- fully opaque
+
+    black 0 -- fully transparent
+
 
 ## Black
 
