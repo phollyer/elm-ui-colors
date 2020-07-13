@@ -1,6 +1,6 @@
 module Colors.Maroon exposing (colors, name)
 
-import Color.Rgb.Maroon
+import Colors.Opaque
     exposing
         ( brown
         , crimson

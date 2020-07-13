@@ -1,6 +1,6 @@
 module Colors.Cyan exposing (colors, name)
 
-import Color.Rgb.Cyan
+import Colors.Opaque
     exposing
         ( aqua
         , aquamarine

@@ -1,6 +1,6 @@
 module Colors.Teal exposing (colors, name)
 
-import Color.Rgb.Teal
+import Colors.Opaque
     exposing
         ( cyan
         , darkcyan

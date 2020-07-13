@@ -1,6 +1,6 @@
 module Colors.Red exposing (colors, name)
 
-import Color.Rgb.Red
+import Colors.Opaque
     exposing
         ( crimson
         , darkred

@@ -1,6 +1,6 @@
 module Colors.Ivory exposing (colors, name)
 
-import Color.Rgb.Ivory
+import Colors.Opaque
     exposing
         ( ivory
         )

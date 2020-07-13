@@ -1,6 +1,6 @@
 module Colors.Beige exposing (colors, name)
 
-import Color.Rgb.Beige exposing (beige)
+import Colors.Opaque exposing (beige)
 import Element as El exposing (Color, centerX, el, text)
 import Element.Background as Background
 

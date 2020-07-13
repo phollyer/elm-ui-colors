@@ -1,6 +1,6 @@
 module Colors.Brown exposing (colors, name)
 
-import Color.Rgb.Brown as Brown
+import Colors.Opaque as Brown
     exposing
         ( bisque
         , blanchedalmond

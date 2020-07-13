@@ -1,6 +1,6 @@
 module Colors.Turquoise exposing (colors, name)
 
-import Color.Rgb.Turquoise
+import Colors.Opaque
     exposing
         ( darkturquoise
         , mediumturquoise

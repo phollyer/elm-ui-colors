@@ -1,6 +1,6 @@
 module Colors.White exposing (colors, name)
 
-import Color.Rgb.White
+import Colors.Opaque
     exposing
         ( aliceblue
         , antiquewhite

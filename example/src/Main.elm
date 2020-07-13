@@ -3,9 +3,6 @@ module Main exposing (main)
 {- Run this example in elm reactor in order to view the colors. -}
 
 import Browser
-import Color.Rgb.Black exposing (black)
-import Color.Rgb.Grey exposing (grey)
-import Color.Rgb.White exposing (white)
 import Colors.Beige as Beige
 import Colors.Black as Black
 import Colors.Blue as Blue
@@ -19,6 +16,7 @@ import Colors.Ivory as Ivory
 import Colors.Lavender as Lavender
 import Colors.Magenta as Magenta
 import Colors.Maroon as Maroon
+import Colors.Opaque exposing (black, grey, white)
 import Colors.Orange as Orange
 import Colors.Peach as Peach
 import Colors.Pink as Pink

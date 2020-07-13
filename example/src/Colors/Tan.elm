@@ -1,6 +1,6 @@
 module Colors.Tan exposing (colors, name)
 
-import Color.Rgb.Tan as Tan
+import Colors.Opaque as Tan
 import Element exposing (Color, centerX, el, text)
 
 

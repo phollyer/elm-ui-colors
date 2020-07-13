@@ -1,6 +1,6 @@
 module Colors.Gray exposing (colors, name)
 
-import Color.Rgb.Gray
+import Colors.Opaque
     exposing
         ( black
         , darkgray

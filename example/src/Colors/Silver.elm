@@ -1,6 +1,6 @@
 module Colors.Silver exposing (colors, name)
 
-import Color.Rgb.Silver
+import Colors.Opaque
     exposing
         ( darkgray
         , darkgrey

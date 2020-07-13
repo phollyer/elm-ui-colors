@@ -1,6 +1,6 @@
 module Colors.Peach exposing (colors, name)
 
-import Color.Rgb.Peach
+import Colors.Opaque
     exposing
         ( moccasin
         , papayawhip

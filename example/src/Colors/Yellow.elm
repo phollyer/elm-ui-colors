@@ -1,6 +1,6 @@
 module Colors.Yellow exposing (colors, name)
 
-import Color.Rgb.Yellow
+import Colors.Opaque
     exposing
         ( darkYellow1
         , darkYellow2

@@ -1,6 +1,6 @@
 module Colors.Orange exposing (colors, name)
 
-import Color.Rgb.Orange
+import Colors.Opaque
     exposing
         ( coral
         , darkorange
