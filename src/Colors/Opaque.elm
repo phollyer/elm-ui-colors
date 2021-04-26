@@ -64,7 +64,7 @@ module Colors.Opaque exposing
 
 @docs blue, lightblue, mediumblue, darkblue, aliceblue, azure, blueviolet, cadetblue, cornflowerblue, dodgerblue, indigo, midnightblue, navy, powderblue, royalblue, skyblue, lightskyblue, deepskyblue, slateblue, mediumslateblue, darkslateblue, steelblue, lightsteelblue
 
-## Beige
+## Beige
 
 @docs beige
 
@@ -93,7 +93,7 @@ module Colors.Opaque exposing
 
 @docs magenta, darkmagenta, fuchsia
 
-## Orange
+## Orange
 
 @docs orange, coral, darkorange
 
@@ -107,11 +107,11 @@ module Colors.Opaque exposing
 
 @docs pink, deeppink, hotpink, lightpink
 
-## Purple
+## Purple
 
 @docs purple, mediumpurple, orchid, mediumorchid, darkorchid, plum, thistle, violet, darkviolet
 
-## Tan
+## Tan
 
 @docs tan
 
